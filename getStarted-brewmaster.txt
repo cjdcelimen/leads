@@ -1,0 +1,41 @@
+	http://v1k45.com/blog/
+	https://www.django-rest-framework.org/api-guide/viewsets/
+	Full Stack React & Django - Basic Rest API
+
+py -m pip install django djangorestframework django-rest-knox
+
+django-admin startproject brewmaster
+
+py manage.py startapp career
+	# create a career counselor tracker app
+
+	# in the main folder settings.py
+	# under INSTALLED_APPS 
+	# add the app name 
+	# add rest_framework
+	
+	# go to career/models.py and add the necessary fields then migrate
+
+py manage.py makemigrations
+py manage.py migrate
+
+	# Django REST framework comes with serializers
+	# it takes the query set into JSON
+	
+# create serializers.py inside the career folder
+# create api.py inside the career folder
+
+	# viewset allows us to create a full CRUD API without having to specifiy explicitly the methods for the functionality 
+	
+# go to brewmaster/urls.py and do the necessary changes
+# create urls.py inside the career folder
+
+	#test the POST method in Postman
+	#http://localhost:8000/api/leads/
+	#then after doing for example two post entries, test the GET request and you should see the two examples you've created
+	
+
+
+
+
+
